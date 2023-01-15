@@ -5,6 +5,7 @@ import interactionCreate from "./listeners/interactionCreate";
 
 export class MyClient extends Client {
     public config: any;
+    public opt: any;
 }
 
 console.log("Bot is starting...");
