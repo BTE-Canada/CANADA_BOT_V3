@@ -40,9 +40,10 @@ export class DiscordHelpers {
         const channel = await this.getChannel(client, channelId);
         if (channel) {
             if (channel.isTextBased()) {
+                console.log(channel);
 
                 const textChannel = channel as TextChannel;
-                return textChannel.messages.cache.get(messageId);
+                return textChannel.messages.fetch(messageId);
 
             }
             return null;
