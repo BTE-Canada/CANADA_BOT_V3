@@ -131,3 +131,4 @@ dist
 
 # Config File
 config.ts
+src/config.ts
